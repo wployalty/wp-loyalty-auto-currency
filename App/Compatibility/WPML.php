@@ -24,6 +24,9 @@ class WPML implements Currency
 
     function convertToDefaultCurrency($amount, $current_currency_code)
     {
+	    if(is_admin()) {
+		    return $amount;
+	    }
         $default_currency = $this->getDefaultCurrency();
         if (!empty($default_currency) && $default_currency == $current_currency_code) {
             return $amount;
