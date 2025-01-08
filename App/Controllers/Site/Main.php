@@ -132,6 +132,7 @@ class Main extends Base {
             'RealMag' => 'isEnableRealMagCurrency',
             'WPML'    => 'isEnabledWPMLCurrency',
             'Aelia'   => 'isEnabledAeliaoCurrency',
+            'PriceBasedonCountry' => 'isEnabledPriceBasedCountry'
         );
 
         foreach ( $currencyPlugins as $pluginName => $enableMethod ) {
@@ -187,7 +188,9 @@ class Main extends Base {
     static function isEnabledAeliaoCurrency() {
         return self::isPluginIsActive( 'woocommerce-aelia-currencyswitcher/woocommerce-aelia-currencyswitcher.php' );
     }
-
+    static function isEnabledPriceBasedCountry(){
+        return self::isPluginIsActive( 'woocommerce-product-price-based-on-countries/woocommerce-product-price-based-on-countries.php' );
+    }
     static function getProductPrice( $productPrice, $item, $is_redeem, $orderCurrency ) {
         $currency_plugin_helper = self::getActivePluginObject();
         if ( empty( $currency_plugin_helper ) ) {
