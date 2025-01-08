@@ -1,60 +1,77 @@
-# Copyright (C) 2022 Wployalty
-# This file is distributed under the GNU General Public License v3.0.
-#, fuzzy
+# Copyright (C) 2025 WPLoyalty
+# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPLoyalty - Auto Currency earning\n"
-"Report-Msgid-Bugs-To: \n"
-"Last-Translator: WPLoyalty\n"
-"Language-Team: WPLoyalty\n"
+"Project-Id-Version: WPLoyalty - Multi Currency 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-loyalty-auto-currency\n"
+"Last-Translator: wployalty <support@wployalty.net>\n"
+"Language-Team: wployalty <support@wployalty.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-04-26 13:12+0530\n"
+"POT-Creation-Date: 2025-01-08T17:45:25+05:30\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: wp-loyalty-auto-currency\n"
-"X-Poedit-KeywordsList: __;_e;_n;_x;esc_attr__;esc_attr_e;esc_attr_x;"
-"esc_html__;esc_html_e;esc_html_x\n"
-"X-Poedit-Basepath: ../..\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Poedit-SearchPath-0: App\n"
-"X-Poedit-SearchPath-1: wp-loyalty-auto-currency.php\n"
-"X-Poedit-SearchPathExcluded-0: vendor/composer\n"
-"X-Poedit-SearchPathExcluded-1: vendor/autoload.php\n"
-"X-Poedit-SearchPathExcluded-2: composer.lock\n"
-"X-Poedit-SearchPathExcluded-3: composer.json\n"
 
-#: App/Controllers/Site/Main.php:25
+#. Plugin Name of the plugin
+#: wp-loyalty-auto-currency.php
+#: wp-loyalty-auto-currency.php:51
+msgid "WPLoyalty - Multi Currency"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-loyalty-auto-currency.php
+msgid "https://www.wployalty.net"
+msgstr ""
+
+#. Description of the plugin
+#: wp-loyalty-auto-currency.php
+msgid "Adds multi-currency support for WPLoyalty with automatic currency conversion compatibility with 4 popular multicurrency plugins for WooCommerce"
+msgstr ""
+
+#. Author of the plugin
+#: wp-loyalty-auto-currency.php
+msgid "WPLoyalty"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-loyalty-auto-currency.php
+msgid "https://wployalty.net/"
+msgstr ""
+
+#: App/Controllers/Site/Main.php:22
 msgid "WPLoyalty: Auto Currency Change"
 msgstr ""
 
-#: App/Controllers/Site/Main.php:56
+#: App/Controllers/Site/Main.php:54
 msgid "Saving..."
 msgstr ""
 
-#: App/Controllers/Site/Main.php:57 App/Views/main.php:41
+#: App/Controllers/Site/Main.php:55
+#: App/Views/main.php:41
 msgid "Save Changes"
 msgstr ""
 
-#: App/Controllers/Site/Main.php:76
+#: App/Controllers/Site/Main.php:72
 msgid "Don't have access permission"
 msgstr ""
 
-#: App/Controllers/Site/Main.php:80
+#: App/Controllers/Site/Main.php:76
 msgid "Page query params missing..."
 msgstr ""
 
-#: App/Controllers/Site/Main.php:406 App/Controllers/Site/Main.php:418
-#: App/Controllers/Site/Main.php:430
+#: App/Controllers/Site/Main.php:370
+#: App/Controllers/Site/Main.php:382
+#: App/Controllers/Site/Main.php:394
 msgid "Settings not saved!"
 msgstr ""
 
-#: App/Controllers/Site/Main.php:416
+#: App/Controllers/Site/Main.php:380
 msgid "This field have invalid strings"
 msgstr ""
 
-#: App/Controllers/Site/Main.php:427
+#: App/Controllers/Site/Main.php:391
 msgid "Settings saved successfully!"
 msgstr ""
 
