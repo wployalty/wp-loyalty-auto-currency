@@ -15,6 +15,9 @@ class Aelia implements Currency
 
     function getDefaultProductPrice($product_price, $product, $item, $is_redeem, $order_currency)
     {
+        if (is_object($product) && (float)$product->get_price('edit') === (float)get_post_meta($product->get_id(), '_price', true)) {
+            return $product_price;
+        }
         $current_code = isset($GLOBALS['woocommerce-aelia-currencyswitcher']) ? $GLOBALS['woocommerce-aelia-currencyswitcher']->get_selected_currency() : '';
         if (!empty($current_code)) {
             $product_price = $this->convertToDefaultCurrency($product_price, $current_code);

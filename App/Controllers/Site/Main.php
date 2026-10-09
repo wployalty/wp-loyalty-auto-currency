@@ -181,7 +181,9 @@ class Main extends Base {
 
     static function isEnabledWPMLCurrency() {
         //ref: https://wordpress.org/plugins/woocommerce-multilingual/
-        return self::isPluginIsActive( 'woocommerce-multilingual/wpml-woocommerce.php' );
+        return self::isPluginIsActive( 'woocommerce-multilingual/wpml-woocommerce.php' )
+               && function_exists( 'wcml_is_multi_currency_on' )
+               && wcml_is_multi_currency_on();
     }
 
     static function isEnabledAeliaoCurrency() {
